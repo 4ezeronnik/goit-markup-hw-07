@@ -282,17 +282,6 @@ img {
   margin-bottom: 50px;
 }
 
-/* Section specific */
-.section.no-padding {
-  padding-top: 0;
-  padding-bottom: 94px;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 /* Секция "why-us-section" */
 .why-us-section {
   margin-top: 94px;
@@ -312,7 +301,6 @@ img {
 }
 
 .characteristics__item {
-  margin-bottom: 30px;
 }
 
 .characteristics__box {
@@ -349,17 +337,29 @@ img {
   margin-bottom: 10px;
 }
 
-/* Чем мы занимаемся */
-.secondary-container {
+/* Секция "our-work-section" */
+.our-work-section {
+  margin-bottom: 94px;
+}
+
+.our-work-section__title {
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: var(--title-text-color);
+  margin-bottom: 50px;
+}
+
+.our-work-list {
   display: flex;
 }
 
-.item-secondary {
+.our-work-list__item {
   width: 370px;
   position: relative;
 }
 
-.what-we-do-title {
+.our-work-list__title{
   position: absolute;
 
   bottom: 0;
@@ -376,7 +376,7 @@ img {
   text-transform: uppercase;
 }
 
-.secondary-container .item-secondary + .item-secondary {
+.our-work-list  .our-work-list__item + .our-work-list__item  {
   margin-left: 30px;
 }
 
