@@ -76,7 +76,7 @@
                 </li>
                 <li class="characteristics__item"> 
                     <div class="characteristics__box">
-                    <svg class="characteristics__icon width="70px" height="70px">
+                    <svg class="characteristics__icon" width="70px" height="70px">
                         <use href="./images/icons.svg#icon-clock-1"></use>
                     </svg>
                     </div>
@@ -406,54 +406,51 @@
 
 <!-- Modal -->
 <div data-modal class="backdrop is-hidden">
-    <div class="modal">
+    <div class="modal-window">
         <button data-modal-close type="button" class="button close-btn">
             <svg width="11px" height="11px">
                 <use href="./images/icons.svg#icon-close"></use>
             </svg>
         </button>
-        <form>
-            <span class="modal-title">Оставьте свои данные, мы вам перезвоним</span>
-                <label class="modal-label" for="name-surname">
-                    <span class="modal-label-name">
-                        Имя</span>
-                    <span class="span-container">
-                        <input class="modal-input-name" type="text" name="name-surname" id="name-surname" >
-                         <svg class="icon-modal-user" width="18px" height="18px">
+        <form class="request-form">
+            <span class="request-form__title">Оставьте свои данные, мы вам перезвоним</span>
+                <label class="request-form__field" for="name-surname">
+                        <span class="request-form__subtitle">Имя</span> 
+                    <span class="request-form-box">
+                        <input class="request-form-box__input" type="text" name="name-surname" id="name-surname">
+                         <svg class="request-form-box__icon" width="18px" height="18px">
                         <use href="/images/icons.svg#icon-user"></use>
                     </svg>
                     </span>
                 </label>
-                <label class="modal-label" for="tel">
-                    <span class="modal-label-name">
-                        Телефон</span>
-                        <span class="span-container">
-                    <input class="modal-input-name" type="tel" name="tel" id="tel">
-                    <svg class="icon-modal-user" width="18px" height="18px">
+                <label class="request-form__field" for="tel">
+                        <span class="request-form__subtitle">Телефон</span>
+                        <span class="request-form-box">
+                    <input class="request-form-box__input" type="tel" name="tel" id="tel">
+                    <svg class="request-form-box__icon" width="18px" height="18px">
                         <use href="/images/icons.svg#icon-tel"> </use>
                     </svg>
                     </span>
                 </label>
-                <label class="modal-label" for="mail">
-                    <span class="modal-label-name">
-                        Почта</span>
-                        <span class="span-container">
-                    <input class="modal-input-name" type="email" name="mail" id="mail">
-                    <svg class="icon-modal-user" width="18px" height="18px">
+                <label class="request-form__field" for="mail">
+                        <span class="request-form__subtitle">Почта</span>
+                        <span class="request-form-box">
+                    <input class="request-form-box__input" type="email" name="mail" id="mail">
+                    <svg class="request-form-box__icon" width="18px" height="18px">
                         <use href="/images/icons.svg#icon-mail"> </use>
                     </svg>
                     </span>
                 </label>
-                <label class="modal-label" for="feedback">
-                    <span class="modal-label-name">Комментарий</span>
-                    <textarea class="modal-textarea" name="feedback" id="feedback" placeholder="Введите текст"></textarea>
+                <label class="request-form__field" for="feedback">
+                    <span class="request-form__subtitle">Комментарий</span>
+                    <textarea class="request-form__textarea" name="feedback" id="feedback" placeholder="Введите текст"></textarea>
                 </label>
-                <label class="checkbox-label" for="checkbox">
-                <input class="visually-hidden check-input" type="checkbox" name="checkbox" id="checkbox">
-                <svg class="check-icon-checked" width="16" height="15">
+                <label class="policy-box" for="checkbox">
+                <input class="visually-hidden policy-checkbox" type="checkbox" name="checkbox" id="checkbox">
+                <svg class="policy-box__icon" width="16" height="15">
                     <use href="/images/icons.svg#icon-check"></use>
                 </svg>
-                <span class="text-checkbox">Соглашаюсь с рассылкой и принимаю&nbsp;<a href="#" class="checkbox-link">Условия договора</a></span>
+                <span class="policy-box__title">Соглашаюсь с рассылкой и принимаю&nbsp;<a href="#" class="policy-box__link">Условия договора</a></span>
                 </label>
             <button class="btn-checkbox" type="submit">
                 Отправить
