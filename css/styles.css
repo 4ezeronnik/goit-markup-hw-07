@@ -614,7 +614,22 @@ img {
   transform: translateY(0);
 }
 
-/* Футер */
+/* Подвал страницы / Футер */
+.footer-section {
+  display: flex;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+}
+
+.footer-section__container {
+  display: flex;
+  align-items: baseline;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .address-section {
   height: 81px;
   font-style: normal;
@@ -635,31 +650,20 @@ img {
   text-decoration: none;
 }
 
-.address-contact {
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
-}
-
-.address-link {
+.address-list__link {
   color: var(--primary-white-color);
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
 
-.address-contacts {
+.address-list__contacts {
   color: rgba(255, 255, 255, 0.6);
   margin-top: 9px;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-}
-
-.footer-container {
-  display: flex;
-  align-items: baseline;
-  padding-left: 15px;
-  padding-right: 15px;
+  text-decoration: none;
 }
 
 .footer-contacts .logo {
@@ -667,20 +671,12 @@ img {
   margin-bottom: 20px;
 }
 
-.footer-section {
-  display: flex;
-
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: #2f303a;
-}
-
-.social-links {
+.footer-social-links {
   margin-left: 70px;
   margin-right: 93px;
 }
 
-.footer-title {
+.footer-social-links__title{
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -694,17 +690,21 @@ img {
   margin-bottom: 20px;
 }
 
-.footer-social {
+.footer-social-list  {
   display: flex;
 }
 
-.footer-social-item {
+.footer-social-list__item {
   display: flex;
   height: 44px;
   width: 44px;
 }
 
-.footer-link {
+.footer-social-list__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-social-list__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -717,8 +717,8 @@ img {
     background-color var(--animation-time) var(--main-timing-function);
 }
 
-.footer-link:hover,
-.footer-link:focus {
+.footer-social-list__link:hover,
+.footer-social-list__link:focus {
   fill: var(--primary-white-color);
   background-color: var(--accent-color);
   border-radius: 50px;
@@ -726,10 +726,6 @@ img {
 
 .footer-icon {
   fill: var(--primary-white-color);
-}
-
-.footer-social-item:not(:last-child) {
-  margin-right: 10px;
 }
 
 .container-footer-parent {
