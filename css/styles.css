@@ -185,6 +185,7 @@ img {
 .button {
   display: inline-block;
   border-radius: 4px;
+  border: none;
   color: var(--title-text-color);
   font-family: Roboto, sans-serif;
   font-size: 16px;
@@ -223,10 +224,11 @@ img {
   background-color: var(--accent-color);
   padding: 10px 32px;
   min-width: 200px;
+  border: none;
 }
 
 /* Sections */
-
+ /* Навигация на другие страницы */
 .page-header {
   border-bottom: 1px solid #ececec;
 }
@@ -236,7 +238,8 @@ img {
   fill: currentColor;
 }
 
-.hero-title {
+/* Секция "hero-section" */
+.hero-section__title {
   color: var(--primary-white-color);
   background-color: #2f303a transparent;
   font-weight: 900;
@@ -290,24 +293,29 @@ img {
   padding-bottom: 94px;
 }
 
-/* Особенности */
-.specific-element-title {
-  color: var(--title-text-color);
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  margin-bottom: 10px;
+/* Секция "why-us-section" */
+.why-us-section {
+  margin-top: 94px;
+  margin-bottom: 94px;
 }
 
-.specific-container {
+.why-us-section__title {
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: var(--title-text-color);
+  margin-bottom: 50px;
+}
+
+.characteristics {
   display: flex;
 }
 
-.style-specific {
+.characteristics__item {
   margin-bottom: 30px;
 }
 
-.style-specific-object {
+.characteristics__box {
   display: flex;
   width: 270px;
   height: 120px;
@@ -318,15 +326,27 @@ img {
   border-radius: 4px;
 }
 
-.specific-container .style-specific + .style-specific {
+.characteristics .characteristics__item + .characteristics__item {
   margin-left: 30px;
 }
 
-.specific-element-paragraph {
+.characteristics__icon {
+
+}
+
+.characteristics__paragraph {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 1.7;
+}
+
+.characteristics__title {
+  color: var(--title-text-color);
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 /* Чем мы занимаемся */
