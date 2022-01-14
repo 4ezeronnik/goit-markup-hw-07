@@ -724,20 +724,17 @@ img {
   border-radius: 50px;
 }
 
-.footer-icon {
+.footer-social-list__icon {
   fill: var(--primary-white-color);
 }
 
-.container-footer-parent {
-  display: flex;
-}
 
-.form-container {
+.subscription {
   display: flex;
   align-items: flex-end;
 }
 
-.label-form-subscription {
+.subscription__title {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -749,7 +746,7 @@ img {
   color: #ffffff;
 }
 
-.input-footer {
+.subscription__input-footer {
   margin-top: 20px;
   min-width: 358px;
   min-height: 50px;
@@ -776,12 +773,11 @@ img {
     background-color var(--animation-time) var(--main-timing-function);
 }
 
-.input-footer:focus,
-.input-footer:hover {
+.subscription__input-footer:focus,
+.subscription__input-footer:hover {
   border-color: var(--accent-color);
 }
-
-.input-footer::placeholder {
+.subscription__input-footer::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -816,10 +812,11 @@ img {
   cursor: pointer;
 }
 
-.button-icon {
+.subscription__icon {
   fill: var(--primary-white-color);
   margin-left: 10px;
 }
+
 /* Модальное окно */
 
 .backdrop {
