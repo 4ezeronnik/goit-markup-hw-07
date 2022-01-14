@@ -380,16 +380,41 @@ img {
   margin-left: 30px;
 }
 
-/* Наша команда */
-.team-container {
+/* Секция "our-team-section" */
+.our-team-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: #f5f4fa;
+
+}
+
+.our-team-section__title {
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: var(--title-text-color);
+  margin-bottom: 50px;
+}
+
+.our-team-list {
   display: flex;
 }
 
-.team-container .item-team + .item-team {
+.our-team-list__item {
+  background-color: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  min-height: 428px;
+}
+
+.our-team-list .our-team-list__item + .our-team-list__item {
   margin-left: 30px;
 }
 
-.team-element-title {
+.our-team-list__title {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -399,25 +424,12 @@ img {
   margin-top: 30px;
 }
 
-.team-description {
+.our-team-list__text {
   line-height: 1.2;
   text-align: center;
 }
 
-.team.section {
-  background-color: #f5f4fa;
-}
-
-.item-team {
-  background-color: var(--primary-white-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-
-  min-height: 428px;
-}
-
-.team-icons-list {
+.our-team-contacts {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -425,16 +437,16 @@ img {
   padding-top: 16px;
 }
 
-.team-icons-item {
+.our-team-contacts__item {
   width: 44px;
   height: 44px;
 }
 
-.team-icons-item:not(:last-child) {
+.our-team-contacts__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.team-icons-link {
+.our-team-contacts__link {
   display: flex;
   width: 100%;
   height: 100%;
@@ -444,10 +456,10 @@ img {
   fill: #afb1b8;
   border-radius: 50px;
   transition: fill var(--animation-time) var(--main-timing-function),
-    background-color var(--animation-time) var(--main-timing-function);
+  background-color var(--animation-time) var(--main-timing-function);
 }
 
-.team-icons-link:hover {
+.our-team-contacts__link:hover {
   fill: var(--primary-white-color);
   background-color: var(--accent-color);
   border-radius: 50px;
