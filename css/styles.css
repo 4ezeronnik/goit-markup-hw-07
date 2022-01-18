@@ -286,9 +286,9 @@ img {
   text-align: center;
 }
 
-.secondary-title {
+.section-title {
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.4;
   text-align: center;
   color: var(--title-text-color);
   margin-bottom: 50px;
